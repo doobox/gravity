@@ -39,6 +39,14 @@ You can access an element from a list by calling the subscript operator [] on it
 	return count;
 ```
 The for in loop can be used over any object that supports iteration, such as [Lists](list.md), Strings or [Maps](map.md).
+```swift
+	var r = View1.subviews;
+	for (var view in r) {
+		if (view is OvalShape) {
+			Console.write(view);
+		}
+	}
+```
 
 ### Loop method</h4>
 Performing a loop is very common operation in any programming language, so Gravity adds a very convenient way to run a loop by adding a special loop method to some classes (Int, Range, List, String and Map) that accepts a [closure](closure.md) as parameter:
